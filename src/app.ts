@@ -9,7 +9,7 @@ import { router } from './routes';
 import { AppError } from './shared/errors/AppError';
 import createConnection from "../src/database/index";
 
-createConnection();
+createConnection('localhost');
 const app = express();
 
 app.use(cors());
